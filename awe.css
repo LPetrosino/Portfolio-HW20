@@ -1,5 +1,3 @@
-/* BODY */
-
 body {
     background-color: #D0DEE1;
     color: #333;
@@ -12,48 +10,6 @@ body {
 html{
     scroll-behavior: smooth;
 }
-#intro h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-}
-#headimg{
-    display: flex;
-}
-
-
-/* HOMEPAGE HERO SECTION GRID */
-
-.herobannerGrid {
-    display: grid;
-    max-width: 1500px;
-    justify-content: center;
-    grid-template-columns: 60% 40%;
-    grid-template-rows: 600px;
-    grid-template-areas: "intro photo";
-    margin: 0 auto;
-}
-
-#intro {
-    grid-area: intro;
-    margin-left: 50px;
-    margin-right: 20px;
-    
-}
-
-#photo {
-    grid-area: photo;
-    float: right;
-    width: 345px;
-    height: 456px;
-    top: 216px;
-    padding-left: 100px;
-    margin-right: 50px;
-
-}
-
-
-/* NAVIGATION */
-
 .logo{
     width: 30px;
 }
@@ -151,8 +107,6 @@ button {
         margin-right: auto;
     }
 }
-/* TYPOGRAPHY */
-
 a{
     text-decoration: none;
     color: #333;
@@ -168,6 +122,7 @@ h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 48px;
     font-weight: 700;
+    color: #FA8942;
 }
 
 h2 {
@@ -205,11 +160,6 @@ h6{
     color: #FA8942;
     font-size: 24px;
 }
-
-
-/*AWE CASE STUDY */
-
-
 .awePageTitle {
     background-image:  url("../images/AWE\ Case\ Study\ Cover.png");
     background-position:bottom;
@@ -517,11 +467,11 @@ footer {
         padding-left: 10px;
     
     }
-}
+
     /* MEDIA QUERY HEADER AND HERO BANNER 600px */
-header {
-    height: 700px;
-}
+    header {
+        height: 700px;
+    }
     .herobannerGrid {
         display: grid;
         max-width: 700px;
@@ -615,7 +565,7 @@ header {
             max-height: 400px;
         
         }
-    
+    }
 
         /* MEDIA QUERY CASE STUDY PAGE 600px */
 
@@ -627,7 +577,7 @@ header {
         height: 700px;
     }
 
-.footerGrid {
+    .footerGrid {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
@@ -658,14 +608,14 @@ header {
             list-style: none;
             padding: 0;
         }
-    }
+}
 
 
     /* MEDIA QUERY 500px */
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 600px){
     
-    /* MEDIA QUERY - NAVIGATION 500px */
+
     
     .nav {
         display: flex;
@@ -699,15 +649,15 @@ header {
 
     /* MEDIA QUERY HEADER AND HERO BANNER 500px */
 
-header {
-    height: 500px;
-}
+    header {
+        height: 500px;
+    }
 
-.aboutPageHeader {
-    height: 200px;
-    position:fixed;
-    z-index: 1000001;
-}
+    .aboutPageHeader {
+        height: 200px;
+        position:fixed;
+        z-index: 1000001;
+    }
     .herobannerGrid {
         display: grid;
         max-width: 600px;
@@ -757,10 +707,6 @@ header {
         font-size: 16px;
     }
 
-    /* MEDIA QUERY CASE STUDIES 500px */
-
-   
-
     .casestudyGrid {
         grid-template-columns: 1fr;
         grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px;
@@ -800,9 +746,8 @@ header {
             max-height: 400px;
         
         }
-        /* MEDIA QUERY CASE STUDY PAGE 500px */
-
-    .awePageHeader {
+       
+        .awePageHeader {
             background-image:  url("../images/AWE\ Clickable.png");
             background-position:top;
             background-size:contain;

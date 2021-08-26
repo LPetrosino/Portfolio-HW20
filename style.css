@@ -19,6 +19,12 @@ html, body {
         background-repeat: no-repeat;
     }
 }
+#caseStudy {
+    color: white;
+}
+#caseStudy:hover {
+    color: #40507C;
+}
 .logo{
     width: 30px;
 }
